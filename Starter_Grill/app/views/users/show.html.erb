@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<% @cuser = User.find(session[:user_id])%>
+<% if @cuser.name == "Admin"%>
+  <%= link_to 'Continue', users_url %> |
+<% else %>
+  <%= link_to 'Continue', root_url %> |
+<% end%>
+<%= link_to 'Edit', edit_user_path(@user) %>

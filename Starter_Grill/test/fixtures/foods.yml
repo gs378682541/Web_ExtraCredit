@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  typeName: MyString
+  foodName: MyString
+  foodDescription: MyString
+  foodPrice: 1.5
+
+two:
+  typeName: MyString
+  foodName: MyString
+  foodDescription: MyString
+  foodPrice: 1.5

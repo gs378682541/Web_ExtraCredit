@@ -1,0 +1,11 @@
+<% @types.each do |type|%>
+  <div >
+    <h2><span><%= type.typeName %></span></h2>
+    <%= image_tag "#{type.typeName}.jpg"%>
+    <ul>
+      <% @type_detail["#{type.typeName}"].each do |food|%>
+      <li><span>$<%=food.foodPrice%> </span><%=food.foodName%><p><%= food.foodDescription%></p></li>
+      <% end%>
+    </ul>
+  </div>
+<% end%>
